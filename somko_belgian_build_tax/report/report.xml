@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+            id="report"
+            model="account.invoice"
+            string="Print 6% BTW attest"
+            report_type="qweb-pdf"
+            name="somko_belgian_build_tax.attest_report"
+            file="attest"
+    />
+
+    <template id="attest_report">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <style type="text/css">
+                        #page_1 {position:relative; overflow: hidden;margin: 99px 0px 192px 94px;padding: 0px;border: none;width: 700px;}
+
+                        .ft0{font: bold 19px 'Calibri';line-height: 23px;}
+                        .ft1{font: 11px 'Calibri';line-height: 13px;}
+                        .ft2{font: 16px 'Calibri';line-height: 19px;}
+                        .ft3{font: 16px 'Calibri';margin-left: 4px;line-height: 19px;}
+                        .ft4{font: bold 15px 'Calibri';line-height: 18px;}
+
+                        .p0{text-align: left;padding-left: 4px;margin-top: 0px;margin-bottom: 0px;}
+                        .p1{text-align: justify;padding-right: 136px;margin-top: 21px;margin-bottom: 0px;}
+                        .p2{text-align: left;margin-top: 55px;margin-bottom: 0px;}
+                        .p3{text-align: left;margin-top: 1px;margin-bottom: 0px;}
+                        .p4{text-align: left;margin-top: 0px;margin-bottom: 0px;}
+                        .p5{text-align: left;padding-left: 261px;margin-top: 1px;margin-bottom: 0px;}
+                        .p6{text-align: left;margin-top: 39px;margin-bottom: 0px;}
+                        .p7{text-align: left;padding-right: 118px;margin-top: 40px;margin-bottom: 0px;}
+                        .p8{text-align: left;margin-top: 20px;margin-bottom: 0px;}
+                        .p9{text-align: left;margin-top: 40px;margin-bottom: 0px;}
+                        .p10{text-align: left;margin-top: 54px;margin-bottom: 0px;}
+                        .p11{text-align: left;padding-right: 103px;margin-top: 17px;margin-bottom: 0px;}
+                    </style>
+
+                    <P class="p0 ft0">ATTEST 6% <NOBR>btw-tarief</NOBR> voor renovatiewerken aan woningen ouder dan 10 jaar</P>
+                    <P class="p1 ft1">Toepassing van het verlaagd <NOBR>btw-tarief</NOBR> van 6% op werken in onroerende staat aan privéwoningen krachtens de bepalingen van de rubrieken XXXI en XXXVIII van het koninklijk besluit nr. 20 van 20 juli 1970 tot vaststelling van de tarieven van de belasting over de toegevoegde waarde en tot indeling van de goederen en diensten bij die tarieven.</P>
+                    <br/>
+                    <P class="p2 ft2">Ondergetekende: ……………………………………………………………………………………………………………….</P>
+                    <br/>
+                    <P class="p3 ft2">Wonende te: …………………………………………………………………………………………………………………….</P>
+                    <br/>
+                    <P class="p4 ft2">verklaart dat het gebouw gelegen te: …………………………………………………………………………………………</P>
+                    <br/>
+                    <p class="p5 ft2">…………………………………………………………………………………………</p>
+                    <P class="p6 ft2">waarvan hij/zij (2):</P>
+                    <P class="p3 ft2"><SPAN class="ft2">-</SPAN><SPAN class="ft3">eigenaar</SPAN></P>
+                    <P class="p4 ft2"><SPAN class="ft2">-</SPAN><SPAN class="ft3">huurder</SPAN></P>
+                    <P class="p3 ft2"><SPAN class="ft2">-</SPAN><SPAN class="ft3">vruchtgebruiker</SPAN></P>
+                    <P class="p7 ft2">is, effectief in gebruik is sedert ten minste 10 jaar (1) vóór het eerste tijdstip van de verschuldigdheid van de btw op de werken die worden uitgevoerd overeenkomstig de factuur met nummer <t t-esc="o.number"/> en datum <t t-esc="o.date"/>.</P>
+                    <P class="p9 ft2">en na de uitvoering van de vermelde werken effectief en (2)</P>
+                    <P class="p4 ft2"><SPAN class="ft2">-</SPAN><SPAN class="ft3">uitsluitend</SPAN></P>
+                    <P class="p3 ft2"><SPAN class="ft2">-</SPAN><SPAN class="ft3">hoofdzakelijk</SPAN></P>
+                    <P class="p4 ft2">zal gebruikt worden als privéwoning.</P>
+                    <br/>
+                    <P class="p9 ft2">Opgemaakt te: ………………………………………………</P>
+                    <br/>
+                    <P class="p3 ft2">Datum: ……………………………………….………………</P>
+                    <br/><br/><br/><br/>
+                    <P class="p4 ft2">Handtekening …………………………….…………………</P>
+                    <P class="p10 ft4">TERUG TE ZENDEN NAAR DE AANNEMER DIE DE WERKEN HEEFT UITGEVOERD</P>
+                    <P class="p11 ft1">1 Voor de levering met plaatsing van verwarmingsketels in appartementsgebouwen of liftinstallaties is een ingebruikname van ten minste 15 jaar vereist om de materialen te kunnen factureren tegen 6%.</P>
+                    <P class="p4 ft1">2 Schrappen wat niet past.</P>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

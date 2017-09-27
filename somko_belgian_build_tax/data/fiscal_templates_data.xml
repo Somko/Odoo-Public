@@ -1,0 +1,20 @@
+<odoo>
+
+    <record id="fiscal_position_template_renovation" model="account.fiscal.position">
+        <field name="name">Renovation</field>
+        <field name="chart_template_id" ref="l10n_be.l10nbe_chart_template"/>
+    </record>
+
+    <record id="afpttn_intracom_7" model="account.fiscal.position.tax">
+        <field name="position_id" ref="fiscal_position_template_renovation"/>
+        <field name="tax_src_id" ref="l10n_be.attn_VAT-OUT-21-S"/>
+        <field name="tax_dest_id" ref="l10n_be.attn_VAT-OUT-06-S"/>
+    </record>
+
+    <record id="afpttn_intracom_8" model="account.fiscal.position.tax">
+        <field name="position_id" ref="fiscal_position_template_renovation"/>
+        <field name="tax_src_id" ref="l10n_be.attn_VAT-OUT-21-L"/>
+        <field name="tax_dest_id" ref="l10n_be.attn_VAT-OUT-06-L"/>
+    </record>
+
+</odoo>
