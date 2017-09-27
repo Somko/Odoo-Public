@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Somko belgian build tax',
+    'name': 'Belgian build tax',
     'version': '1.0',
     'author': 'Somko',
     'category': 'PGlas',
