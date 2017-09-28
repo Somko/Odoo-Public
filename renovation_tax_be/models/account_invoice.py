@@ -7,4 +7,6 @@ class AccountInvoice(models.Model):
     @api.onchange('fiscal_position_id')
     def somko_update_tax(self):
         for line in self.invoice_line_ids:
+            price = line.unit_price
             line._onchange_product_id()
+            line.unit_price = price
