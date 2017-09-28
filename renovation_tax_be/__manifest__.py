@@ -6,7 +6,7 @@
     'category': 'Somko',
     'description': """""",
     'website': 'http://www.somko.be',
-    'images': [],
+    'images': ['static/description/somkologo.png',],
     'depends': ['account', 'sale', 'l10n_be'],
     'data': [
         'data/account_tax_template_data.xml',
