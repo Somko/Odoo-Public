@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Renovation Tax Belgium',
-    'version': '1.0',
+    'version': '10.0.1',
     'author': 'Somko',
-    'category': 'Somko',
-    'description': """""",
+    'category': 'Accounting',
+    'description': """
+        Change the VAT tax with one mouse click from 21% to 6%.
+        Print VAT certificates
+        """,
     'website': 'http://www.somko.be',
-    'images': ['static/description/somkologo.png',],
+    'images': ['static/description/module-cover.png',],
+
     'depends': ['account', 'sale', 'l10n_be'],
     'data': [
         'data/account_tax_template_data.xml',
