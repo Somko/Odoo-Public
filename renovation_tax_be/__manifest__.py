@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Belgian build tax',
+    'name': 'Renovation Tax Belgium',
     'version': '1.0',
     'author': 'Somko',
-    'category': 'PGlas',
+    'category': 'Somko',
     'description': """""",
     'website': 'http://www.somko.be',
     'images': [],
