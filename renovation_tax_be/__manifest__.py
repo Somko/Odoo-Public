@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Renovation Tax Belgium',
-    'version': '1.0',
+    'version': '10.0.1',
     'author': 'Somko',
-    'category': 'Somko',
+    'category': 'Accounting',
     'description': """""",
-    'website': 'http://www.somko.be',
+    'website': 'https://www.somko.be',
     'images': [],
     'depends': ['account', 'sale', 'l10n_be'],
     'data': [
