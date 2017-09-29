@@ -6,7 +6,7 @@
             model="account.invoice"
             string="Print 6% BTW attest"
             report_type="qweb-pdf"
-            name="somko_belgian_build_tax.attest_report"
+            name="renovation_tax_be.attest_report"
             file="attest"
     />
 
