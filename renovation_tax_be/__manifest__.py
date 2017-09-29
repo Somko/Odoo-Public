@@ -8,6 +8,7 @@
         Change the VAT tax with one mouse click from 21% to 6%.
         Print VAT certificates
         """,
+    'summary': """Change the VAT tax with one mouse click from 21% to 6%. Print VAT certificates.""",
     'website': 'https://www.somko.be',
     'images': ['static/description/module-cover.png',],
     'depends': ['account', 'sale', 'l10n_be'],
